@@ -1,14 +1,12 @@
     * {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Manrope', sans-serif;
     }
 
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
+    /* BOUTONS */
     .cta {
         background-color: red;
         color: white;
+        font-weight: bold;
         display: inline-block;
         border: none;
         padding: 15px 35px;
@@ -21,31 +19,93 @@
         background-color: darkred;
     }
 
+    /* BARRE DE NAVIGATION */
     nav {
         background-color: white;
         display: flex;
-        text-align: center;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+        margin: 0px;
     }
 
     nav h2 {
-    margin-left: 300px
+        margin-left: 220px
     }
 
     nav a {
         color: dimgrey;
         text-decoration: none;
-
+        padding: 10px;
     }
 
-    .vehicules1 {
+    nav a:hover {
+        color: #222222;
+    }
+
+    nav .cta {
+        padding: 8px 40px;
+    }
+
+    /* PREMIERE PAGE DU SITE */
+    #section-accueil {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #section-accueil div {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        align-content: center;
+    }
+    #section-accueil h1 {
+        font-size: 45px;
+        margin-left: 60px;
+    }
+
+    #section-accueil p {
+        color: dimgrey;
+        margin-left: 60px;
+        margin-right: 80px;
+        margin-top: -15px;
+    }
+
+    #section-accueil .cta {
+        margin-left: 60px;
+        margin-top: 10px;
+    }
+
+    #section-accueil img {
+        align-content: flex-end;
+        height: 600px;
+        width: 700px;
+        margin-top: 20px;
+    }
+
+    /* DEUXIEME PAGE DU SITE */
+
+    #section-vehicules {
+        padding-top: 100px;
+    }
+
+    #section-vehicules h2 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 140px;
+        text-decoration: underline overline;
+        text-decoration-color: red;
+        text-decoration-thickness: 3px;
+    }
+
+    #section-vehicules a {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
-    .vehicules2 {
+    .vehicules1, .vehicules2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -53,29 +113,33 @@
     }
 
     .vehicules1 img {
-        width: 450px;
-        height: 300px;
-        margin-left: 25px;
+        width: 400px;
+        height: 250px;
+        margin-left: 45px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     }
 
     .vehicules2 img {
-        width: 450px;
-        height: 300px;
-        margin-top: -250px;
-        margin-left: 25px;
+        width: 400px;
+        height: 250px;
+        margin-top: -300px;
+        margin-left: 45px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .vehicules1 img:hover {
+        opacity: 0.85;
+
     }
 
-    .vehicules1 p {
-        text-align: center;
-    }
-    .vehicules2 p {
-        text-align: center;
-    }
-
-    main .cta {
+    .vehicules1 p, a {
         text-align: center;
     }
 
+    .vehicules2 p, a {
+        text-align: center;
+    }
+
+    /* AUTRES */
     span {
         color: red;
     }
